@@ -71,60 +71,75 @@ class EarningReports extends Component {
     }
     render() {
         return (
-            <React.Fragment>
-                                <Card>
-                                    <CardBody>
-                                        <Dropdown className="float-right" isOpen={this.state.menu} toggle={() => this.setState({menu : !this.state.menu})} >
-                                            <DropdownToggle tag="i" className="arrow-none card-drop" >
-                                                <i className="mdi mdi-dots-vertical"></i>
-                                            </DropdownToggle>
-                                            <DropdownMenu right>
-                                                
-                                                <DropdownItem href="">Sales Report</DropdownItem>
-                                                
-                                                <DropdownItem href="">Export Report</DropdownItem>
-                                                
-                                                <DropdownItem href="">Profit</DropdownItem>
-                                                
-                                                <DropdownItem href="">Action</DropdownItem>
-                                            </DropdownMenu>
-                                        </Dropdown>
+          <React.Fragment>
+            <Card>
+              <CardBody>
+                <Dropdown
+                  className="float-right"
+                  isOpen={this.state.menu}
+                  toggle={() => this.setState({ menu: !this.state.menu })}
+                >
+                  <DropdownToggle tag="i" className="arrow-none card-drop">
+                    <i className="mdi mdi-dots-vertical"></i>
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <DropdownItem href="">Sales Report</DropdownItem>
 
-                                        <h4 className="card-title mb-4">Earning Reports</h4>
-                                        <div className="text-center">
-                                            <Row>
-                                                <Col sm={6}>
-                                                    <div>
-                                                        <div className="mb-3">
-                                                            <div id="radialchart-1" className="apex-charts">
-                                                            <ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height="60" />
-                                                            </div>
-                                                        </div>
+                    <DropdownItem href="">Export Report</DropdownItem>
 
-                                                        <p className="text-muted text-truncate mb-2">Weekly Earnings</p>
-                                                        <h5>$2,523</h5>
-                                                    </div>
-                                                </Col>
+                    <DropdownItem href="">Profit</DropdownItem>
 
-                                                <Col sm={6}>
-                                                    <div className="mt-5 mt-sm-0">
-                                                        <div className="mb-3">
-                                                            <div id="radialchart-2" className="apex-charts">
-                                                            <ReactApexChart options={this.state.options2} series={this.state.series2} type="radialBar" height="60" />
-                                                            </div>
-                                                        </div>
+                    <DropdownItem href="">Action</DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
 
-                                                        <p className="text-muted text-truncate mb-2">Monthly Earnings</p>
-                                                        <h5>$11,235</h5>
-                                                    </div>
-                                                </Col>
-                                                
-                                            </Row>
-                                            
-                                        </div>
-                                    </CardBody>
-                                </Card>
-            </React.Fragment>
+                <h4 className="card-title mb-4">Earning Reports</h4>
+                <div className="text-center">
+                  <Row>
+                    <Col sm={6}>
+                      <div>
+                        <div className="mb-3">
+                          <div id="radialchart-1" className="apex-charts">
+                            <ReactApexChart
+                              options={this.state.options}
+                              series={this.state.series}
+                              type="radialBar"
+                              height="60"
+                            />
+                          </div>
+                        </div>
+
+                        <p className="text-muted text-truncate mb-2">
+                          Weekly Earnings
+                        </p>
+                        <h5>₦2,520</h5>
+                      </div>
+                    </Col>
+
+                    <Col sm={6}>
+                      <div className="mt-5 mt-sm-0">
+                        <div className="mb-3">
+                          <div id="radialchart-2" className="apex-charts">
+                            <ReactApexChart
+                              options={this.state.options2}
+                              series={this.state.series2}
+                              type="radialBar"
+                              height="60"
+                            />
+                          </div>
+                        </div>
+
+                        <p className="text-muted text-truncate mb-2">
+                          Monthly Earnings
+                        </p>
+                        <h5>₦15,240</h5>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+              </CardBody>
+            </Card>
+          </React.Fragment>
         );
     }
 }

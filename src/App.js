@@ -14,13 +14,13 @@ import NonAuthLayout from "./components/NonAuthLayout";
 // Import scss
 import "./theme.scss";
 
-//Fake backend
+// backend
 import fakeBackend from './helpers/AuthType/fakeBackend';
 
 //Firebase helper
 //import { initFirebaseBackend } from "./helpers/firebase_helper";
 
-// Activating fake backend
+// Activating  backend
 fakeBackend();
 
 // const firebaseConfig = {
@@ -65,7 +65,7 @@ class App extends Component {
 		const Layout = this.getLayout();
 
 		return (
-			<React.Fragment>
+			<>
 				<Router>
 					<Switch>
 						{publicRoutes.map((route, idx) => (
@@ -89,7 +89,7 @@ class App extends Component {
 						))}
 					</Switch>
 				</Router>
-			</React.Fragment>
+			</>
 		);
 	}
 }

@@ -9,7 +9,7 @@ class SalesAnalytics extends Component {
     state = {
         series: [42, 26, 15],
         options : {
-            labels: ["Product A", "Product B", "Product C"],
+            labels: ["Mobile Phones", "Laptops", "Cameras"],
             plotOptions: {
                 pie: {
                     donut: {
@@ -49,19 +49,19 @@ class SalesAnalytics extends Component {
                                         <Row>
                                             <Col xs={4}>
                                                 <div className="text-center mt-4">
-                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle text-primary font-size-10 mr-1"></i> Product A</p>
+                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle text-primary font-size-10 mr-1"></i> Mobile Phones</p>
                                                     <h5>42 %</h5>
                                                 </div>
                                             </Col>
                                             <Col xs={4}>
                                                 <div className="text-center mt-4">
-                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle text-success font-size-10 mr-1"></i> Product B</p>
+                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle text-success font-size-10 mr-1"></i> Laptops</p>
                                                     <h5>26 %</h5>
                                                 </div>
                                             </Col>
                                             <Col xs={4}>
                                                 <div className="text-center mt-4">
-                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle text-warning font-size-10 mr-1"></i> Product C</p>
+                                                    <p className="mb-2 text-truncate"><i className="mdi mdi-circle text-warning font-size-10 mr-1"></i> Cameras</p>
                                                     <h5>42 %</h5>
                                                 </div>
                                             </Col>

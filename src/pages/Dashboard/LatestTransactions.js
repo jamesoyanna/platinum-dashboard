@@ -28,123 +28,211 @@ class LatestTransactions extends Component {
     
     render() {
         const data = {
-            columns: [
-              {
-                dataField: 'id',
-                text: 'No.'
-              },
-              {
-                dataField: "orderId",
-                text: "Order ID"
-              },
-              {
-                dataField: "date",
-                text: "Date"
-              },
-              {
-                dataField: "billingName",
-                text: "Billing Name"
-              },
-              {
-                dataField: "total",
-                text: "Total"
-              },
-              {
-                dataField: "status",
-                text: "Payment Status"
-              },
-            ],
-            rows: [
-              {
-                id : 1,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1572</Link>,
-                date: "04 Apr, 2020",
-                billingName: "Walter Brown",
-                total: "$172",
-                status : <div className="badge badge-soft-success font-size-12">Paid</div>,
-              },
-              {
-                          id : 2,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1571</Link> ,
-                date: "03 Apr, 2020",
-                billingName: "Jimmy Barker",
-                total: "$165",
-                status : <div className="badge badge-soft-warning font-size-12">unpaid</div>,
-              },
-              {
-                            id : 3,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1570</Link>,
-                date: "03 Apr, 2020",
-                billingName: "Donald Bailey",
-                total: "$146",
-                status : <div className="badge badge-soft-success font-size-12">Paid</div>,
-              },
-              {
-                            id : 4,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1569</Link>,
-                date: "02 Apr, 2020",
-                billingName: "Paul Jones",
-                total: "$183",
-                status : <div className="badge badge-soft-success font-size-12">Paid</div>,
-              },
-              {
-                            id : 5,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1568</Link>,
-                date: "04 Apr, 2020",
-                billingName: "Walter Brown",
-                total: "$172",
-                status : <div className="badge badge-soft-danger font-size-12">Chargeback</div>,
-              },
-              {
-                            id : 6,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1567</Link>,
-                date: "04 Apr, 2020",
-                billingName: "Walter Brown",
-                total: "$172",
-                status : <div className="badge badge-soft-warning font-size-12">unpaid</div>,
-              },
-              {
-                            id : 7,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1566</Link>,
-                date: "04 Apr, 2020",
-                billingName: "Walter Brown",
-                total: "$172",
-                status : <div className="badge badge-soft-success font-size-12">Paid</div>,
-              },
-              {
-                            id : 8,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1565</Link>,
-                date: "04 Apr, 2020",
-                billingName: "Walter Brown",
-                total: "$172",
-                status : <div className="badge badge-soft-success font-size-12">Paid</div>,
-              },
-              {
-                            id : 9,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1564</Link>,
-                date: "04 Apr, 2020",
-                billingName: "Walter Brown",
-                total: "$172",
-                status : <div className="badge badge-soft-success font-size-12">Paid</div>,
-              },
-              {
-                            id : 10,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1563</Link>,
-                date: "04 Apr, 2020",
-                billingName: "Walter Brown",
-                total: "$172",
-                status : <div className="badge badge-soft-warning font-size-12">unpaid</div>,
-              },
-              {
-                            id : 11,
-                orderId: <Link to="#" className="text-dark font-weight-bold">#NZ1562</Link>,
-                date: "04 Apr, 2020",
-                billingName: "Walter Brown",
-                total: "$172",
-                status : <div className="badge badge-soft-success font-size-12">Paid</div>,
-              },
-            ]
-      };
+          columns: [
+            {
+              dataField: "id",
+              text: "No.",
+            },
+            {
+              dataField: "orderId",
+              text: "Order ID",
+            },
+            {
+              dataField: "date",
+              text: "Date",
+            },
+            {
+              dataField: "billingName",
+              text: "Billing Name",
+            },
+            {
+              dataField: "total",
+              text: "Total",
+            },
+            {
+              dataField: "status",
+              text: "Payment Status",
+            },
+          ],
+          rows: [
+            {
+              id: 1,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1572
+                </Link>
+              ),
+              date: "03 Feb, 2021",
+              billingName: "Sunday Olamide",
+              total: "₦11,540",
+              status: (
+                <div className="badge badge-soft-success font-size-12">
+                  Paid
+                </div>
+              ),
+            },
+            {
+              id: 2,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1571
+                </Link>
+              ),
+              date: "05 Feb, 2021",
+              billingName: "Kehinde Badmus",
+              total: "₦16,200",
+              status: (
+                <div className="badge badge-soft-warning font-size-12">
+                  unpaid
+                </div>
+              ),
+            },
+            {
+              id: 3,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1570
+                </Link>
+              ),
+              date: "11 Feb, 2021",
+              billingName: "Chinedu Mordi",
+              total: "₦9,650",
+              status: (
+                <div className="badge badge-soft-success font-size-12">
+                  Paid
+                </div>
+              ),
+            },
+            {
+              id: 4,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1569
+                </Link>
+              ),
+              date: "02 Jan, 2021",
+              billingName: "Musa Hamed",
+              total: "₦18,340",
+              status: (
+                <div className="badge badge-soft-success font-size-12">
+                  Paid
+                </div>
+              ),
+            },
+            {
+              id: 5,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1568
+                </Link>
+              ),
+              date: "04 Jan, 2020",
+              billingName: "Olawale John",
+              total: "₦20,530",
+              status: (
+                <div className="badge badge-soft-danger font-size-12">
+                  Chargeback
+                </div>
+              ),
+            },
+            {
+              id: 6,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1567
+                </Link>
+              ),
+              date: "09 Jan, 2021",
+              billingName: "Chuka Ngozi",
+              total: "₦7,420",
+              status: (
+                <div className="badge badge-soft-warning font-size-12">
+                  unpaid
+                </div>
+              ),
+            },
+            {
+              id: 7,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1566
+                </Link>
+              ),
+              date: "17 Jan, 2021",
+              billingName: "Walter Brown",
+              total: "₦15,620",
+              status: (
+                <div className="badge badge-soft-success font-size-12">
+                  Paid
+                </div>
+              ),
+            },
+            {
+              id: 8,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1565
+                </Link>
+              ),
+              date: "14 Jan, 2021",
+              billingName: "Walter Brown",
+              total: "₦1,250",
+              status: (
+                <div className="badge badge-soft-success font-size-12">
+                  Paid
+                </div>
+              ),
+            },
+            {
+              id: 9,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1564
+                </Link>
+              ),
+              date: "19 Jan, 2021",
+              billingName: "Shoneye Tamilore",
+              total: "$172",
+              status: (
+                <div className="badge badge-soft-success font-size-12">
+                  Paid
+                </div>
+              ),
+            },
+            {
+              id: 10,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1563
+                </Link>
+              ),
+              date: "22 Jan, 2021",
+              billingName: "Benedict Kalu",
+              total: "$172",
+              status: (
+                <div className="badge badge-soft-warning font-size-12">
+                  unpaid
+                </div>
+              ),
+            },
+            {
+              id: 11,
+              orderId: (
+                <Link to="#" className="text-dark font-weight-bold">
+                  #NZ1562
+                </Link>
+              ),
+              date: "23 Jan, 2021",
+              billingName: "Lawrence Omole",
+              total: "₦17,250",
+              status: (
+                <div className="badge badge-soft-success font-size-12">
+                  Paid
+                </div>
+              ),
+            },
+          ],
+        };
 
       const options = {
         // pageStartIndex: 0,

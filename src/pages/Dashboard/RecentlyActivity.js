@@ -46,11 +46,11 @@ class RecentlyActivity extends Component {
                                                     </div>
                                                     <div>
                                                         <div>
-                                                            <h5 className="font-size-13">28 Apr, 2020 <small className="text-muted">12:07 am</small></h5>
+                                                            <h5 className="font-size-13">28 Jan, 2021 <small className="text-muted">12:07 am</small></h5>
                                                         </div>
                                                         
                                                         <div>
-                                                            <p className="text-muted mb-0">Responded to need “Volunteer Activities”</p>
+                                                            <p className="text-muted mb-0">Responded to need “Customer Activities”</p>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -62,11 +62,11 @@ class RecentlyActivity extends Component {
                                                     </div>
                                                     <div>
                                                         <div>
-                                                            <h5 className="font-size-13">21 Apr, 2020 <small className="text-muted">08:01 pm</small></h5>
+                                                            <h5 className="font-size-13">15 Jan, 2021 <small className="text-muted">08:01 pm</small></h5>
                                                         </div>
                                                         
                                                         <div>
-                                                            <p className="text-muted mb-0">Added an interest “Volunteer Activities”</p>
+                                                            <p className="text-muted mb-0">Added an interest “Customers Activities”</p>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -78,7 +78,7 @@ class RecentlyActivity extends Component {
                                                     </div>
                                                     <div>
                                                         <div>
-                                                            <h5 className="font-size-13">17 Apr, 2020 <small className="text-muted">09:23 am</small></h5>
+                                                            <h5 className="font-size-13">05 Jan, 2021 <small className="text-muted">09:23 am</small></h5>
                                                         </div>
                                                         
                                                         <div>
@@ -94,11 +94,11 @@ class RecentlyActivity extends Component {
                                                     </div>
                                                     <div>
                                                         <div>
-                                                            <h5 className="font-size-13">11 Apr, 2020 <small className="text-muted">05:10 pm</small></h5>
+                                                            <h5 className="font-size-13">04 Feb, 2021 <small className="text-muted">05:10 pm</small></h5>
                                                         </div>
                                                         
                                                         <div>
-                                                            <p className="text-muted mb-0">Responded to need “In-Kind Opportunity”</p>
+                                                            <p className="text-muted mb-0">Resloved customer returned product</p>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -110,11 +110,11 @@ class RecentlyActivity extends Component {
                                                     </div>
                                                     <div>
                                                         <div>
-                                                            <h5 className="font-size-13">07 Apr, 2020 <small className="text-muted">12:47 pm</small></h5>
+                                                            <h5 className="font-size-13">07 Feb, 2021 <small className="text-muted">12:47 pm</small></h5>
                                                         </div>
                                                         
                                                         <div>
-                                                            <p className="text-muted mb-0">Created need “Volunteer Activities”</p>
+                                                            <p className="text-muted mb-0">Created a new account for customer”</p>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -126,11 +126,11 @@ class RecentlyActivity extends Component {
                                                     </div>
                                                     <div>
                                                         <div>
-                                                            <h5 className="font-size-13">05 Apr, 2020 <small className="text-muted">03:09 pm</small></h5>
+                                                            <h5 className="font-size-13">11 Feb, 2021 <small className="text-muted">03:09 pm</small></h5>
                                                         </div>
                                                         
                                                         <div>
-                                                            <p className="text-muted mb-0">Attending the event “Some New Event”</p>
+                                                            <p className="text-muted mb-0">Updated new customer record”</p>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -142,11 +142,11 @@ class RecentlyActivity extends Component {
                                                     </div>
                                                     <div>
                                                         <div>
-                                                            <h5 className="font-size-13">02 Apr, 2020 <small className="text-muted">12:07 am</small></h5>
+                                                            <h5 className="font-size-13">13 Feb, 2021 <small className="text-muted">12:07 am</small></h5>
                                                         </div>
                                                         
                                                         <div>
-                                                            <p className="text-muted mb-0">Responded to need “In-Kind Opportunity”</p>
+                                                            <p className="text-muted mb-0">Responded to customer complaint</p>
                                                         </div>
                                                     </div>
                                                 </li>

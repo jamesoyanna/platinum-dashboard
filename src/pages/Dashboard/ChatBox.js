@@ -27,7 +27,7 @@ class ChatBox extends Component {
                                         <div className="user-chat-border">
                                             <Row>
                                                 <Col md={5} xs={9}>
-                                                    <h5 className="font-size-15 mb-1">Frank Vickery</h5>
+                                                    <h5 className="font-size-15 mb-1">James Oyanna</h5>
                                                     <p className="text-muted mb-0"><i className="mdi mdi-circle text-success align-middle mr-1"></i> Active now</p>
                                                 </Col>
                                                 <Col md={7} xs={3}>
@@ -92,7 +92,7 @@ class ChatBox extends Component {
                                                                 <img src={avatar2} alt=""/>
                                                             </div>
                                                             <div className="ctext-wrap">
-                                                                <div className="conversation-name">Frank Vickery</div>
+                                                                <div className="conversation-name">James Oyanna</div>
                                                                 <div className="ctext-wrap-content">
                                                                     <p className="mb-0">
                                                                         Hey! I am available
@@ -107,7 +107,7 @@ class ChatBox extends Component {
                                                     <li className="right">
                                                         <div className="conversation-list">
                                                             <div className="ctext-wrap">
-                                                                <div className="conversation-name">Ricky Clark</div>
+                                                                <div className="conversation-name">Ope Awotunde</div>
                                                                 <div className="ctext-wrap-content">
                                                                     <p className="mb-0">
                                                                         Hi, How are you? What about our next meeting?
@@ -130,7 +130,7 @@ class ChatBox extends Component {
                                                                 <img src={avatar2} alt=""/>
                                                             </div>
                                                             <div className="ctext-wrap">
-                                                                <div className="conversation-name">Frank Vickery</div>
+                                                                <div className="conversation-name">Olowojoba Chris</div>
                                                                 <div className="ctext-wrap-content">
                                                                     <p className="mb-0">
                                                                         Hello!
@@ -145,7 +145,7 @@ class ChatBox extends Component {
                                                     <li className="right">
                                                         <div className="conversation-list">
                                                             <div className="ctext-wrap">
-                                                                <div className="conversation-name">Ricky Clark</div>
+                                                                <div className="conversation-name">Gabriel Lawal</div>
                                                                 <div className="ctext-wrap-content">
                                                                     <p className="mb-0">
                                                                         Hi, How are you? What about our next meeting?
@@ -163,7 +163,7 @@ class ChatBox extends Component {
                                                                 <img src={avatar2} alt=""/>
                                                             </div>
                                                             <div className="ctext-wrap">
-                                                                <div className="conversation-name">Frank Vickery</div>
+                                                                <div className="conversation-name">Saliu Muhammed</div>
                                                                 <div className="ctext-wrap-content">
                                                                     <p className="mb-0">
                                                                         Yeah everything is fine
@@ -182,7 +182,7 @@ class ChatBox extends Component {
                                                                 <img src={avatar2} alt=""/>
                                                             </div>
                                                             <div className="ctext-wrap">
-                                                                <div className="conversation-name">Frank Vickery</div>
+                                                                <div className="conversation-name">John Osai</div>
                                                                 <div className="ctext-wrap-content">
                                                                     <p className="mb-0">& Next meeting tomorrow 10.00AM</p>
                                                                 </div>
@@ -195,7 +195,7 @@ class ChatBox extends Component {
                                                     <li className="right">
                                                         <div className="conversation-list">
                                                             <div className="ctext-wrap">
-                                                                <div className="conversation-name">Ricky Clark</div>
+                                                                <div className="conversation-name">Yusuf Faith</div>
                                                                 <div className="ctext-wrap-content">
                                                                     <p className="mb-0">
                                                                         Wow that's great
