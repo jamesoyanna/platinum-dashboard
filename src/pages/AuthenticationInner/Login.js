@@ -32,80 +32,138 @@ class Login extends Component {
     render() {
 
         return (
-            <React.Fragment>
-                              <div className="home-btn d-none d-sm-block">
-                    <Link to="/"><i className="mdi mdi-home-variant h2 text-white"></i></Link>
-                </div>
-                
-                <div>
-            <Container fluid className="p-0">
+          <React.Fragment>
+            <div className="home-btn d-none d-sm-block">
+              <Link to="/">
+                <i className="mdi mdi-home-variant h2 text-white"></i>
+              </Link>
+            </div>
+
+            <div>
+              <Container fluid className="p-0">
                 <Row className="no-gutters">
-                    <Col lg={4}>
-                        <div className="authentication-page-content p-4 d-flex align-items-center min-vh-100">
-                            <div className="w-100">
-                                <Row className="justify-content-center">
-                                    <Col lg={9}>
-                                        <div>
-                                            <div className="text-center">
-                                                <div>
-                                                    <Link to="/" className="logo"><img src={logodark} height="20" alt="logo"/></Link>
-                                                </div>
-    
-                                                <h4 className="font-size-18 mt-4">Welcome Back !</h4>
-                                                <p className="text-muted">Sign in to continue to Nazox.</p>
-                                            </div>
+                  <Col lg={4}>
+                    <div className="authentication-page-content p-4 d-flex align-items-center min-vh-100">
+                      <div className="w-100">
+                        <Row className="justify-content-center">
+                          <Col lg={9}>
+                            <div>
+                              <div className="text-center">
+                                <div>
+                                  <Link to="/" className="logo">
+                                    <img
+                                      src={logodark}
+                                      height="20"
+                                      alt="logo"
+                                    />
+                                  </Link>
+                                </div>
 
+                                <h4 className="font-size-18 mt-4">
+                                  Welcome Back !
+                                </h4>
+                                <p className="text-muted">
+                                  Sign in to continue to Platinum.
+                                </p>
+                              </div>
 
-                                            <div className="p-2 mt-5">
-                                                <AvForm className="form-horizontal" >
-                    
-                                                    <FormGroup className="auth-form-group-custom mb-4">
-                                                        <i className="ri-user-2-line auti-custom-input-icon"></i>
-                                                        <Label htmlFor="username">Username</Label>
-                                                        <AvField name="username" type="text" className="form-control" id="username" validate={{email: true, required: true}} placeholder="Enter username"/>
-                                                    </FormGroup>
-                            
-                                                    <FormGroup className="auth-form-group-custom mb-4">
-                                                        <i className="ri-lock-2-line auti-custom-input-icon"></i>
-                                                        <Label htmlFor="userpassword">Password</Label>
-                                                        <AvField name="password" type="password" className="form-control" id="userpassword" placeholder="Enter password"/>
-                                                    </FormGroup>
-                            
-                                                    <div className="custom-control custom-checkbox">
-                                                        <Input type="checkbox" className="custom-control-input" id="customControlInline"/>
-                                                        <Label className="custom-control-label" htmlFor="customControlInline">Remember me</Label>
-                                                    </div>
+                              <div className="p-2 mt-5">
+                                <AvForm className="form-horizontal">
+                                  <FormGroup className="auth-form-group-custom mb-4">
+                                    <i className="ri-user-2-line auti-custom-input-icon"></i>
+                                    <Label htmlFor="username">Username</Label>
+                                    <AvField
+                                      name="username"
+                                      type="text"
+                                      className="form-control"
+                                      id="username"
+                                      validate={{ email: true, required: true }}
+                                      placeholder="Enter username"
+                                    />
+                                  </FormGroup>
 
-                                                    <div className="mt-4 text-center">
-                                                        <Button color="primary" className="w-md waves-effect waves-light" type="submit">Log In</Button>
-                                                    </div>
+                                  <FormGroup className="auth-form-group-custom mb-4">
+                                    <i className="ri-lock-2-line auti-custom-input-icon"></i>
+                                    <Label htmlFor="userpassword">
+                                      Password
+                                    </Label>
+                                    <AvField
+                                      name="password"
+                                      type="password"
+                                      className="form-control"
+                                      id="userpassword"
+                                      placeholder="Enter password"
+                                    />
+                                  </FormGroup>
 
-                                                    <div className="mt-4 text-center">
-                                                        <Link to="/auth-recoverpw" className="text-muted"><i className="mdi mdi-lock mr-1"></i> Forgot your password?</Link>
-                                                    </div>
-                                                </AvForm>
-                                            </div>
+                                  <div className="custom-control custom-checkbox">
+                                    <Input
+                                      type="checkbox"
+                                      className="custom-control-input"
+                                      id="customControlInline"
+                                    />
+                                    <Label
+                                      className="custom-control-label"
+                                      htmlFor="customControlInline"
+                                    >
+                                      Remember me
+                                    </Label>
+                                  </div>
 
-                                            <div className="mt-5 text-center">
-                                                <p>Don't have an account ? <Link to="/auth-register" className="font-weight-medium text-primary"> Register </Link> </p>
-                                                <p>© 2020 Nazox. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
-                                            </div>
-                                        </div>
+                                  <div className="mt-4 text-center">
+                                    <Button
+                                      color="primary"
+                                      className="w-md waves-effect waves-light"
+                                      type="submit"
+                                    >
+                                      Log In
+                                    </Button>
+                                  </div>
 
-                                    </Col>
-                                </Row>
+                                  <div className="mt-4 text-center">
+                                    <Link
+                                      to="/auth-recoverpw"
+                                      className="text-muted"
+                                    >
+                                      <i className="mdi mdi-lock mr-1"></i>{" "}
+                                      Forgot your password?
+                                    </Link>
+                                  </div>
+                                </AvForm>
+                              </div>
+
+                              <div className="mt-5 text-center">
+                                <p>
+                                  Don't have an account ?{" "}
+                                  <Link
+                                    to="/auth-register"
+                                    className="font-weight-medium text-primary"
+                                  >
+                                    {" "}
+                                    Register{" "}
+                                  </Link>{" "}
+                                </p>
+                                <p>
+                                  © 2021 Platinum Dashboard. Crafted with{" "}
+                                  <i className="mdi mdi-heart text-danger"></i>{" "}
+                                  by James Oyanna
+                                </p>
+                              </div>
                             </div>
-                        </div>
-                    </Col>
-                    <Col lg={8}>
-                        <div className="authentication-bg">
-                            <div className="bg-overlay"></div>
-                        </div>
-                    </Col>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col lg={8}>
+                    <div className="authentication-bg">
+                      <div className="bg-overlay"></div>
+                    </div>
+                  </Col>
                 </Row>
-            </Container>
-        </div>
-            </React.Fragment>
+              </Container>
+            </div>
+          </React.Fragment>
         );
     }
 }

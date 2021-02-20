@@ -10,100 +10,100 @@ import Breadcrumbs from '../../components/Common/Breadcrumb';
 class Customers extends Component {
     constructor(props) {
         super(props);
-        this.state={
-            breadcrumbItems : [
-                { title : "Ecommerce", link : "#" },
-                { title : "Customers", link : "#" },
-            ],
-            isAlertOpen : false,
-            modal_static : false,
-            data : [
-                {
-                    customer : "Carolyn Harvey",
-                    email : "CarolynHarvey@rhyta.com",
-                    phone : "580-464-4694",
-                    balance : "$ 3245",
-                    date : "06 Apr, 2020",
-                },
-                {
-                    customer : "Angelyn Hardin",
-                    email : "AngelynHardin@dayrep.com",
-                    phone : "913-248-2690",
-                    balance : "$ 2435",
-                    date : "05 Apr, 2020",
-                },
-                {
-                    customer : "Carrie Thompson	",
-                    email : "CarrieThompson@rhyta.com",
-                    phone : "734-819-9286",
-                    balance : "$ 2653",
-                    date : "04 Apr, 2020",
-                },
-                {
-                    customer : "Kathleen Haller",
-                    email : "KathleenHaller@dayrep.com",
-                    phone : "313-742-3333",
-                    balance : "$ 2135",
-                    date : "03 Apr, 2020",
-                },
-                {
-                    customer : "Martha Beasley",
-                    email : "MarthaBeasley@teleworm.us",
-                    phone : "301-330-5745",
-                    balance : "$ 2698",
-                    date : "02 Apr, 2020",
-                },
-                {
-                    customer : "Kathryn Hudson",
-                    email : "KathrynHudson@armyspy.com",
-                    phone : "414-453-5725",
-                    balance : "$ 2758",
-                    date : "02 Apr, 2020",
-                },
-                {
-                    customer : "Robert Bott",
-                    email : "RobertBott@armyspy.com",
-                    phone : "712-237-9899",
-                    balance : "$ 2836",
-                    date : "01 Apr, 2020",
-                },
-                {
-                    customer : "Mary McDonald",
-                    email : "MaryMcDonald@armyspy.com",
-                    phone : "317-510-25554",
-                    balance : "$ 3245",
-                    date : "31 Mar, 2020",
-                },
-                {
-                    customer : "Keith Rainey",
-                    email : "KeithRainey@jourrapide.com	",
-                    phone : "214-712-1810",
-                    balance : "$ 3125",
-                    date : "30 Mar, 2020",
-                },
-                {
-                    customer : "Anthony Russo",
-                    email : "AnthonyRusso@jourrapide.com",
-                    phone : "412-371-8864",
-                    balance : "$ 2456",
-                    date : "30 Mar, 2020",
-                },
-                {
-                    customer : "Donna Betz",
-                    email : "DonnaBetz@jourrapide.com",
-                    phone : "626-583-5779",
-                    balance : "$ 3423",
-                    date : "29 Mar, 2020",
-                },
-                {
-                    customer : "Angie Andres",
-                    email : "AngieAndres@armyspy.com",
-                    phone : "213-494-4527",
-                    balance : "$ 3245",
-                    date : "28 Apr, 2020"
-                }
-            ]
-        }
+        this.state = {
+          breadcrumbItems: [
+            { title: "Ecommerce", link: "#" },
+            { title: "Customers", link: "#" },
+          ],
+          isAlertOpen: false,
+          modal_static: false,
+          data: [
+            {
+              customer: "James Oyanna",
+              email: "james@gmail.com",
+              phone: "+234-80464-4620",
+              balance: "₦ 3,240",
+              date: "06 Feb, 2021",
+            },
+            {
+              customer: "Angel Agetu",
+              email: "angleme@gmail.com",
+              phone: "+234-80248-2690",
+              balance: "₦ 2,450",
+              date: "05 Feb, 2021",
+            },
+            {
+              customer: "Taiwo Sanda	",
+              email: "taiwa.sanda@gmail.com",
+              phone: "+234-805819-9286",
+              balance: "₦ 1,570",
+              date: "10 Feb, 2021",
+            },
+            {
+              customer: "Simaon Oyanna",
+              email: "simaon@gmail.com",
+              phone: "+234-803742-3333",
+              balance: "₦ 2,500",
+              date: "03 Feb, 2021",
+            },
+            {
+              customer: "Martha Egbe",
+              email: "Marthaeb@gmail.com",
+              phone: "+234-80301-330-5745",
+              balance: "₦ 3,200",
+              date: "03 Feb, 2021",
+            },
+            {
+              customer: "Kehinde Temitope",
+              email: "temitope@gmail.com",
+              phone: "+234-803453-5725",
+              balance: "₦ 4,000",
+              date: "14 , 2020",
+            },
+            {
+              customer: "Robert John",
+              email: "Robertjohn.com",
+              phone: "+234-80237-9899",
+              balance: "₦ 3,600",
+              date: "21 Jan, 2021",
+            },
+            {
+              customer: "Mary McDonald",
+              email: "Marymac@gmail.com",
+              phone: "+2343-8051-25554",
+              balance: "₦ 3,500",
+              date: "09 Feb, 2021",
+            },
+            {
+              customer: "Keith Lawal",
+              email: "Keithlawal@gmail.com	",
+              phone: "+234-80712-1810",
+              balance: "₦ 1,450",
+              date: "12 Feb, 2021",
+            },
+            {
+              customer: "Anthony Ojo",
+              email: "Anthonojo@yahoo.com",
+              phone: "+234-80371-8864",
+              balance: "₦ 5,100",
+              date: "17 Feb, 2021",
+            },
+            {
+              customer: "Donnald Esho",
+              email: "donaldesho@gmail.com",
+              phone: "+234-80583-5779",
+              balance: "₦ 3,450",
+              date: "05 Feb, 2021",
+            },
+            {
+              customer: "Angie Shana",
+              email: "Angieshana@yahoo.com",
+              phone: "+234-803494-4527",
+              balance: "₦ 1,100",
+              date: "30 Jan, 2021",
+            },
+          ],
+        };
         this.addCustomer.bind(this);
     }
 

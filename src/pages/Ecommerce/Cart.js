@@ -58,117 +58,166 @@ class Cart extends Component {
 
     render() {
         return (
-            <React.Fragment>
-                <div className="page-content">
-                    <Container fluid>
+          <React.Fragment>
+            <div className="page-content">
+              <Container fluid>
+                <Breadcrumbs
+                  title="Cart"
+                  breadcrumbItems={this.state.breadcrumbItems}
+                />
 
-                    <Breadcrumbs title="Cart" breadcrumbItems={this.state.breadcrumbItems} />
+                <Row>
+                  <Col lg={12}>
+                    <Card>
+                      <CardBody>
+                        <div className="table-responsive">
+                          <Table className="table-centered mb-0 table-nowrap">
+                            <thead className="bg-light">
+                              <tr>
+                                <th style={{ width: "120px" }}>Product</th>
+                                <th>Product Desc</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th className="text-center">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {this.state.products.map((product, key) => (
+                                <tr key={key}>
+                                  <td>
+                                    <img
+                                      src={product.img}
+                                      alt="product-img"
+                                      title="product-img"
+                                      className="avatar-md"
+                                    />
+                                  </td>
+                                  <td>
+                                    <h5 className="font-size-14 text-truncate">
+                                      <Link
+                                        to={
+                                          "/ecommerce-product-detail/" +
+                                          product.id
+                                        }
+                                        className="text-dark"
+                                      >
+                                        {product.name}
+                                      </Link>
+                                    </h5>
+                                    <p className="mb-0">
+                                      Color :{" "}
+                                      <span className="font-weight-medium">
+                                        {product.desc}
+                                      </span>
+                                    </p>
+                                  </td>
+                                  <td>₦ {product.price}</td>
+                                  <td>
+                                    <div
+                                      style={{ width: "120px" }}
+                                      className="product-cart-touchspin"
+                                    >
+                                      <InputGroup>
+                                        <InputGroupAddon
+                                          addonType="prepend"
+                                          className="input-group-btn"
+                                        >
+                                          <Button
+                                            color="primary"
+                                            className="bootstrap-touchspin-down"
+                                            onClick={() => {
+                                              this.countDown(
+                                                product.id,
+                                                product.data_attr
+                                              );
+                                            }}
+                                          >
+                                            -
+                                          </Button>
+                                        </InputGroupAddon>
 
-                        <Row>
-                            <Col lg={12}>
-                                <Card>
-                                    <CardBody>
-                                        <div className="table-responsive">
-                                            <Table className="table-centered mb-0 table-nowrap">
-                                                <thead className="bg-light">
-                                                    <tr>
-                                                        <th style={{width:"120px"}}>Product</th>
-                                                        <th>Product Desc</th>
-                                                        <th>Price</th>
-                                                        <th>Quantity</th>
-                                                        <th>Total</th>
-                                                        <th className="text-center">Action</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {
-                                                        this.state.products.map((product, key) =>
-                                                            <tr key={key}>
-                                                                <td>
-                                                                    <img src={product.img} alt="product-img"
-                                                                        title="product-img" className="avatar-md" />
-                                                                </td>
-                                                                <td>
-                                                                    <h5 className="font-size-14 text-truncate"><Link to={"/ecommerce-product-detail/" + product.id} className="text-dark">{product.name}</Link></h5>
-                                                                    <p className="mb-0">Color : <span className="font-weight-medium">{product.desc}</span></p>
-                                                                </td>
-                                                                <td>
-                                                                    $ {product.price}
-                                                                </td>
-                                                                <td>
-                                                                    <div style={{width:"120px"}} className="product-cart-touchspin">
-                                                                        <InputGroup>
-                                                                            <InputGroupAddon addonType="prepend" className="input-group-btn">
-                                                                                <Button color="primary" className="bootstrap-touchspin-down" onClick={() => { this.countDown(product.id, product.data_attr) }}>-</Button>
-                                                                            </InputGroupAddon>
-                                                                            
-                                                                            <Input type="text" value={product.data_attr} readOnly/>
-                                                                            <InputGroupAddon addonType="append" className="input-group-btn">
-                                                                                <Button color="primary" className="bootstrap-touchspin-down" onClick={() => { this.countUP(product.id, product.data_attr) }}>+</Button>
-                                                                            </InputGroupAddon>
-                                                                        </InputGroup>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    $ {product.total}
-                                                                </td>
-                                                                <td style={{width:"90px"}} className="text-center">
-                                                                    <Link to="#" onClick={() => this.removeCartItem(product.id)} className="action-icon text-danger"> <i className="mdi mdi-trash-can font-size-18"></i></Link>
-                                                                </td>
-                                                            </tr>
-                                                        )
-                                                    }
-                                                    <tr className="bg-light text-right">
-                                                        
-                                                        <th scope="row" colSpan="5">
-                                                            Sub Total :
-                                                        </th>
-                                                        
-                                                        <td>
-                                                            $ 1530
-                                                        </td>
-                                                    </tr>
-                                                    <tr className="bg-light text-right">
-                                                        
-                                                        <th scope="row" colSpan="5">
-                                                            Discount :
-                                                        </th>
-                                                        
-                                                        <td>
-                                                            - $ 30
-                                                        </td>
-                                                    </tr>
-                                                    <tr className="bg-light text-right">
-                                                        
-                                                        <th scope="row" colSpan="5">
-                                                            Shipping Charge :
-                                                        </th>
-                                                        
-                                                        <td>
-                                                            $ 25
-                                                        </td>
-                                                    </tr>
-                                                    <tr className="bg-light text-right">
-                                                        
-                                                        <th scope="row" colSpan="5">
-                                                            Total :
-                                                        </th>
-                                                        
-                                                        <td>
-                                                            $ 1525
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </Table>
-                                        </div>
-                                    </CardBody>
-                                </Card>
-                            </Col>
-                        </Row>
+                                        <Input
+                                          type="text"
+                                          value={product.data_attr}
+                                          readOnly
+                                        />
+                                        <InputGroupAddon
+                                          addonType="append"
+                                          className="input-group-btn"
+                                        >
+                                          <Button
+                                            color="primary"
+                                            className="bootstrap-touchspin-down"
+                                            onClick={() => {
+                                              this.countUP(
+                                                product.id,
+                                                product.data_attr
+                                              );
+                                            }}
+                                          >
+                                            +
+                                          </Button>
+                                        </InputGroupAddon>
+                                      </InputGroup>
+                                    </div>
+                                  </td>
+                                  <td>$ {product.total}</td>
+                                  <td
+                                    style={{ width: "90px" }}
+                                    className="text-center"
+                                  >
+                                    <Link
+                                      to="#"
+                                      onClick={() =>
+                                        this.removeCartItem(product.id)
+                                      }
+                                      className="action-icon text-danger"
+                                    >
+                                      {" "}
+                                      <i className="mdi mdi-trash-can font-size-18"></i>
+                                    </Link>
+                                  </td>
+                                </tr>
+                              ))}
+                              <tr className="bg-light text-right">
+                                <th scope="row" colSpan="5">
+                                  Sub Total :
+                                </th>
 
-                    </Container>
-                </div>
-            </React.Fragment>
+                                <td>₦ 2,500</td>
+                              </tr>
+                              <tr className="bg-light text-right">
+                                <th scope="row" colSpan="5">
+                                  Discount :
+                                </th>
+
+                                <td>- ₦ 30</td>
+                              </tr>
+                              <tr className="bg-light text-right">
+                                <th scope="row" colSpan="5">
+                                  Shipping Charge :
+                                </th>
+
+                                <td>₦ 25</td>
+                              </tr>
+                              <tr className="bg-light text-right">
+                                <th scope="row" colSpan="5">
+                                  Total :
+                                </th>
+
+                                <td>₦ 7,850</td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                        </div>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+          </React.Fragment>
         );
     }
 }

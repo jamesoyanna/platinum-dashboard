@@ -19,7 +19,7 @@ class Login extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {  username : "admin@themesdesign.in", password : "123456" }
+        this.state = {  username : "admin@platinum.com", password : "123456" }
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -59,7 +59,7 @@ class Login extends Component {
                                                 </div>
     
                                                 <h4 className="font-size-18 mt-4">Welcome Back !</h4>
-                                                <p className="text-muted">Sign in to continue to Nazox.</p>
+                                                <p className="text-muted">Sign in to continue to Dasboard.</p>
                                             </div>
 
                                            
@@ -97,7 +97,7 @@ class Login extends Component {
 
                                             <div className="mt-5 text-center">
                                                 <p>Don't have an account ? <Link to="/register" className="font-weight-medium text-primary"> Register </Link> </p>
-                                                <p>© 2020 Nazox. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                                <p>© 2020 Platinum Dashboard. Crafted with <i className="mdi mdi-heart text-danger"></i> by James Oyanna</p>
                                             </div>
                                         </div>
 

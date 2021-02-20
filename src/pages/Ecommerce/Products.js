@@ -286,7 +286,7 @@ class Products extends Component {
                                                                 <p className="font-size-12 mb-1">Blue color, T-shirt</p>
                                                                 <h5 className="font-size-15"><Link to="#" className="text-dark">Full sleeve T-shirt</Link></h5>
 
-                                                                <h5 className="mt-3 mb-0">$240</h5>
+                                                                <h5 className="mt-3 mb-0">₦2,450</h5>
                                                             </div>
                                                         </div>
                                                     </Col>
@@ -310,7 +310,7 @@ class Products extends Component {
                                                             <p className="font-size-12 mb-1">Half sleeve, T-shirt</p>
                                                             <h5 className="font-size-15"><Link to="#" className="text-dark">Half sleeve T-shirt </Link></h5>
 
-                                                            <h5 className="mt-3 mb-0"><span className="text-muted mr-2"><del>$240</del></span>$225</h5>
+                                                            <h5 className="mt-3 mb-0"><span className="text-muted mr-2"><del>₦3,000</del></span>₦2,120</h5>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -329,7 +329,7 @@ class Products extends Component {
                                                             <p className="font-size-12 mb-1">Green color, Hoodie</p>
                                                             <h5 className="font-size-15"><Link to="#" className="text-dark">Hoodie (Green)</Link></h5>
 
-                                                            <h5 className="mt-3 mb-0"><span className="text-muted mr-2"><del>$290</del></span>$275</h5>
+                                                            <h5 className="mt-3 mb-0"><span className="text-muted mr-2"><del>₦4,350</del></span>₦1,350</h5>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -348,7 +348,7 @@ class Products extends Component {
                                                             <p className="font-size-12 mb-1">Gray color, Hoodie</p>
                                                             <h5 className="font-size-15"><Link to="#" className="text-dark">Hoodie (Green)</Link></h5>
 
-                                                            <h5 className="mt-3 mb-0"><span className="text-muted mr-2"><del>$290</del></span>$275</h5>
+                                                            <h5 className="mt-3 mb-0"><span className="text-muted mr-2"><del>₦4,340</del></span>₦1,780</h5>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -368,7 +368,7 @@ class Products extends Component {
                                                             <p className="font-size-12 mb-1">Blue color, T-shirt</p>
                                                             <h5 className="font-size-15"><Link to="#" className="text-dark">Full sleeve T-shirt</Link></h5>
 
-                                                            <h5 className="mt-3 mb-0">$242</h5>
+                                                            <h5 className="mt-3 mb-0">₦2,300</h5>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -391,7 +391,7 @@ class Products extends Component {
                                                             <p className="font-size-12 mb-1">Black color, T-shirt</p>
                                                             <h5 className="font-size-15"><Link to="#" className="text-dark">Half sleeve T-shirt </Link></h5>
 
-                                                            <h5 className="mt-3 mb-0"><span className="text-muted mr-2"><del>$240</del></span>$225</h5>
+                                                            <h5 className="mt-3 mb-0"><span className="text-muted mr-2"><del>₦2,100</del></span>₦1,120</h5>
                                                         </div>
                                                     </div>
                                                 </Col>

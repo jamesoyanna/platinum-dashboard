@@ -7,7 +7,7 @@ import SimpleBar from "simplebar-react";
 import { withNamespaces } from "react-i18next";
 
 //Import images
-import avatar3 from "../../../assets/images/users/avatar-3.jpg";
+import avatar3 from "../../../assets/images/users/james.png";
 import avatar4 from "../../../assets/images/users/avatar-4.jpg";
 
 class NotificationDropdown extends Component {

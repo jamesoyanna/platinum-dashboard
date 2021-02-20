@@ -11,7 +11,7 @@ import i18n from '../../../i18n';
 import { withNamespaces } from 'react-i18next';
 
 // falgs
-import usFlag from "../../../assets/images/flags/us.jpg";
+import usFlag from "../../../assets/images/flags/naija.png";
 import spain from "../../../assets/images/flags/spain.jpg";
 import germany from "../../../assets/images/flags/germany.jpg";
 import italy from "../../../assets/images/flags/italy.jpg";

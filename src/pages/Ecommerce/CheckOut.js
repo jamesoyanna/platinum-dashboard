@@ -363,8 +363,8 @@ class CheckOut extends Component {
                                                                     <Link to="#" className="float-right ml-1">Edit</Link>
                                                                     <h5 className="font-size-14 mb-4">Address 1</h5>
                     
-                                                                    <h5 className="font-size-14">Bradley McMillian</h5>
-                                                                    <p className="mb-1">109 Clarksburg Park Road Show Low, AZ 85901</p>
+                                                                    <h5 className="font-size-14">Taiye Shodipe</h5>
+                                                                    <p className="mb-1">109 Chevron Drive, Lekki , Lagos. </p>
                                                                     <p className="mb-0">Mo. 012-345-6789</p>
                                                                 </CardBody>
                                                             </Card>
@@ -376,9 +376,9 @@ class CheckOut extends Component {
                                                                     <Link to="#" className="float-right ml-1">Edit</Link>
                                                                     <h5 className="font-size-14 mb-4">Address 2</h5>
                 
-                                                                    <h5 className="font-size-14">Bradley McMillian</h5>
-                                                                    <p className="mb-1">109 Clarksburg Park Road Show Low, AZ 85901</p>
-                                                                    <p className="mb-0">Mo. 012-345-6789</p>
+                                                                    <h5 className="font-size-14">Joy Okovido</h5>
+                                                                    <p className="mb-1">2, avid close, Ikeja, Lagos</p>
+                                                                    <p className="mb-0">Mo. +234-0845-6789</p>
                                                                 </CardBody>
                                                             </Card>
                                                         </Col>
@@ -502,7 +502,7 @@ class CheckOut extends Component {
                                                     <th scope="row"><img src={img1} alt="product-img" title="product-img" className="avatar-md"/></th>
                                                     <td>
                                                         <h5 className="font-size-14 text-truncate"><Link to="/ecommerce-product-detail" className="text-dark">Full sleeve T-shirt</Link></h5>
-                                                        <p className="text-muted mb-0">$ 240 x 2</p>
+                                                        <p className="text-muted mb-0">₦ 2400 x 2</p>
                                                     </td>
                                                     <td>$ 480</td>
                                                 </tr>
@@ -510,7 +510,7 @@ class CheckOut extends Component {
                                                     <th scope="row"><img src={img2} alt="product-img" title="product-img" className="avatar-md"/></th>
                                                     <td>
                                                         <h5 className="font-size-14 text-truncate"><Link to="/ecommerce-product-detail" className="text-dark">Half sleeve T-shirt</Link></h5>
-                                                        <p className="text-muted mb-0">$ 225 x 1</p>
+                                                        <p className="text-muted mb-0">₦ 2,250 x 1</p>
                                                     </td>
                                                     <td>$ 225</td>
                                                 </tr>
@@ -534,7 +534,7 @@ class CheckOut extends Component {
                                                             <h6 className="m-0 text-right">Total:</h6>
                                                         </td>
                                                         <td>
-                                                            $ 705
+                                                            ₦ 7150
                                                         </td>
                                                     </tr>
                                                 </tbody>

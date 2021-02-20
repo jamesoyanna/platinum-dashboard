@@ -28,7 +28,7 @@ class areachart extends Component {
                     },
                 },
                 xaxis: {
-                    categories: ['2012', '2013', '2014', '2015', '2016', '2017', '2018'],
+                    categories: ['2014', '2015', '2016', '2017', '2018', '2019', '2021'],
                     axisBorder: {
                         show: false
                     },

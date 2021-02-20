@@ -5,7 +5,7 @@ import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap
 import { withNamespaces } from "react-i18next";
 
 // users
-import avatar2 from '../../../assets/images/users/avatar-2.jpg';
+import avatar2 from '../../../assets/images/users/james.png';
 
 class ProfileMenu extends Component {
 

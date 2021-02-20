@@ -149,7 +149,7 @@ class ProductDetail extends Component {
                                                         <div className="text-muted">( 132 )</div>
                                                     </div>
                                                     
-                                                    <h5 className="mt-2"><del className="text-muted mr-2">$252</del>$240 <span className="text-danger font-size-12 ml-2">25 % Off</span></h5>
+                                                    <h5 className="mt-2"><del className="text-muted mr-2">₦2,500</del>₦1,530 <span className="text-danger font-size-12 ml-2">25 % Off</span></h5>
                                                     <p className="mt-3">To achieve this, it would be necessary to have uniform pronunciation</p>
                                                     <hr className="my-4"/>
 
@@ -325,7 +325,7 @@ class ProductDetail extends Component {
                                                 <Media className="border-bottom pb-3">
                                                     <Media body>
                                                         <p className="text-muted mb-2">To an English person, it will seem like simplified English, as a skeptical Cambridge</p>
-                                                        <h5 className="font-size-15 mb-3">James</h5>
+                                                        <h5 className="font-size-15 mb-3">James Oyanna</h5>
 
                                                         <ul className="list-inline product-review-link mb-0">
                                                             <li className="list-inline-item">
@@ -336,7 +336,7 @@ class ProductDetail extends Component {
                                                             </li>
                                                         </ul>
                                                     </Media>
-                                                    <p className="float-sm-right font-size-12">11 Feb, 2020</p>
+                                                    <p className="float-sm-right font-size-12">11 Feb, 2021</p>
                                                 </Media>
                                                 <Media className="border-bottom py-3">
                                                     <Media body>
@@ -352,7 +352,7 @@ class ProductDetail extends Component {
                                                             </li>
                                                         </ul>
                                                     </Media>
-                                                    <p className="float-sm-right font-size-12">22 Jan, 2020</p>
+                                                    <p className="float-sm-right font-size-12">22 Jan, 2021</p>
                                                 </Media>
                                                 <Media className="py-3">
                                                     <Media body>
@@ -368,7 +368,7 @@ class ProductDetail extends Component {
                                                             </li>
                                                         </ul>
                                                     </Media>
-                                                    <p className="float-sm-right font-size-12">04 Jan, 2020</p>
+                                                    <p className="float-sm-right font-size-12">04 Jan, 2021</p>
                                                 </Media>
                                             </div>
                                         </div>

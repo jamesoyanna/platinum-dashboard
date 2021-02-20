@@ -10,11 +10,11 @@ import SimpleBar from "simplebar-react";
 import Breadcrumbs from '../../components/Common/Breadcrumb';
 
 //Import Images
-import avatar1 from "../../assets/images/users/avatar-1.jpg";
-import avatar2 from "../../assets/images/users/avatar-2.jpg";
-import avatar3 from "../../assets/images/users/avatar-3.jpg";
-import avatar4 from "../../assets/images/users/avatar-4.jpg";
-import avatar6 from "../../assets/images/users/avatar-6.jpg";
+import avatar1 from "../../assets/images/users/james.png";
+import avatar2 from "../../assets/images/users/james.png";
+import avatar3 from "../../assets/images/users/james.png";
+import avatar4 from "../../assets/images/users/james.png";
+import avatar6 from "../../assets/images/users/james.png";
 
   let username = "Admin";
    if(sessionStorage.getItem("authUser"))
@@ -30,17 +30,17 @@ class Chat extends Component {
         super(props);
         this.state={
             breadcrumbItems : [
-                { title : "Nazox", link : "#" },
+                { title : "Platinum Ecommerce Dashboard", link : "#" },
                 { title : "Chat", link : "#" },
             ],
             chats: [
-                { id: 1, status: "online", image: avatar2, name: "Steven Franklin", description: "Hey! there I'm available", time: "05 min", isActive: true },
-                { id: 2, status: "Intermediate", image: avatar3, name: "Adam Miller", description: "I've finished it! See you so", time: "12 min", isActive: false },
-                { id: 3, status: "online", image: avatar1, name: "Keith Gonzales", description: "This theme is awesome!", time: "24 min", isActive: false },
-                { id: 4, status: "offline", image: avatar4, name: "Jose Vickery", description: "Nice to meet you", time: "1 hr", isActive: false },
-                { id: 5, status: "Intermediate", image: "Null", name: "Mitchel Givens", description: "Hey! there I'm available", time: "3 hrs", isActive: false },
-                { id: 6, status: "online", image: avatar6, name: "Stephen Hadley", description: "I've finished it! See you so", time: "5 hrs", isActive: false },
-                { id: 7, status: "online", image: "Null", name: "Keith Gonzales", description: "This theme is awesome!", time: "24 min", isActive: false },
+                { id: 1, status: "online", image: avatar2, name: "James Oyanna", description: "Hey! there I'm available", time: "05 min", isActive: true },
+                { id: 2, status: "Intermediate", image: avatar3, name: "Tunde Oluwashina", description: "I've finished it! See you so", time: "12 min", isActive: false },
+                { id: 3, status: "online", image: avatar1, name: "George Mandela", description: "This theme is awesome!", time: "24 min", isActive: false },
+                { id: 4, status: "offline", image: avatar4, name: "Victory Onaivi", description: "Nice to meet you", time: "1 hr", isActive: false },
+                { id: 5, status: "Intermediate", image: "Null", name: "Mitchel Alabi", description: "Hey! there I'm available", time: "3 hrs", isActive: false },
+                { id: 6, status: "online", image: avatar6, name: "Stephen Ogbodo", description: "I've finished it! See you so", time: "5 hrs", isActive: false },
+                { id: 7, status: "online", image: "Null", name: "Mathew Osas", description: "This theme is awesome!", time: "24 min", isActive: false },
             ],
             groups: [
                 { id: 1, image: "G", name: "General" },
@@ -53,33 +53,33 @@ class Chat extends Component {
                 {
                     category: "A",
                     child: [
-                        { id: 1, name: "Adam Miller" },
-                        { id: 2, name: "Alfonso Fisher" },
+                        { id: 1, name: "James Oyanna" },
+                        { id: 2, name: "David Makinde" },
                     ]
                 },
                 {
                     category: "B",
                     child: [
-                        { id: 3, name: "Bonnie Harney" },
+                        { id: 3, name: "Balogun Jude" },
                     ]
                 },
                 {
                     category: "C",
                     child: [
-                        { id: 4, name: "Charles Brown" },
-                        { id: 5, name: "Carmella Jones" },
+                        { id: 4, name: "Charles Otaru" },
+                        { id: 5, name: "Helen Johnson" },
                         { id: 6, name: "Carrie Williams" },
                     ]
                 },
                 {
                     category: "D",
                     child: [
-                        { id: 7, name: "Dolores Minter" },
+                        { id: 7, name: "Wale Adetana" },
                     ]
                 },
             ],
             messages: [
-                { id : "34", isRight : false, image : avatar2, name : "Steven Franklin", message:"Hey! I am available", time : "12:09" },
+                { id : "34", isRight : false, image : avatar2, name : "James Oyanna", message:"Hey! I am available", time : "12:09" },
                 { id: "35", isRight: true, name: username, message: "Hi, How are you? What about our next meeting?", time: "10:02" },
                 { id : "36", isRight : false, image : avatar2, name : "Steven Franklin", message : "Its around next August!", time : "10:00" },
                 { id : "37", isRight : true, image : avatar2, name : username, message : "Good ! then i will available at that time.", time : "10:00" },
@@ -89,7 +89,7 @@ class Chat extends Component {
             settings : false,
             settings2 : false,
             activeTab: '1',
-            Chat_Box_Username: "Steven Franklin",
+            Chat_Box_Username: "James Oyanna",
             Chat_Box_Username2:username,
             Chat_Box_User_Status: "online",
             Chat_Box_User_isActive: false,

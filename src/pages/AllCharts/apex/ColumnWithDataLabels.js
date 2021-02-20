@@ -98,7 +98,7 @@ class ColumnWithDataLabels extends Component {
             
                 },
                 title: {
-                    text: 'Monthly Inflation in Argentina, 2002',
+                    text: 'Monthly Inflation in Nigeria, 2015',
                     floating: true,
                     offsetY: 330,
                     align: 'center',

@@ -29,7 +29,7 @@ class barchart extends Component {
                     borderColor: '#f1f1f1',
                 },
                 xaxis: {
-                    categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan', 'United States', 'China', 'Germany'],
+                    categories: ['Lagos', 'Kaduna', 'Port Harcourt', 'Abuja', 'Onisha', 'Ibadan', 'Benin', 'Ekiti', 'Kano', 'Osun'],
                 }
             }
         }

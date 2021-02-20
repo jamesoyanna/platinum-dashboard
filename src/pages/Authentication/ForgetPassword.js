@@ -33,65 +33,106 @@ class ForgetPasswordPage extends Component {
     return (
       <React.Fragment>
         <div className="home-btn d-none d-sm-block">
-            <Link to="/"><i className="mdi mdi-home-variant h2 text-white"></i></Link>
+          <Link to="/">
+            <i className="mdi mdi-home-variant h2 text-white"></i>
+          </Link>
         </div>
         <div>
-            <Container fluid className="p-0">
-                <Row className="no-gutters">
-                    <Col lg={4}>
-                        <div className="authentication-page-content p-4 d-flex align-items-center min-vh-100">
-                            <div className="w-100">
-                                <Row className="justify-content-center">
-                                    <Col lg={9}>
-                                        <div>
-                                            <div className="text-center">
-                                                <div>
-                                                    <Link to="/" className="logo"><img src={logodark} height="20" alt="logo"/></Link>
-                                                </div>
-    
-                                                <h4 className="font-size-18 mt-4">Reset Password</h4>
-                                                <p className="text-muted">Reset your password to Nazox.</p>
-                                            </div>
-
-                                            <div className="p-2 mt-5">
-                                            {this.props.forgetError && this.props.forgetError ?
-                                                <Alert color="danger" className="mb-4">{this.props.forgetError}</Alert> : null }
-                                            {
-                                            this.props.message ? 
-                                                <Alert color="success" className="mb-4">{this.props.message}</Alert> : null
-                                            }
-                                                <AvForm className="form-horizontal" onValidSubmit={this.handleValidSubmit}>
-                    
-                                                    <FormGroup className="auth-form-group-custom mb-4">
-                                                        <i className="ri-mail-line auti-custom-input-icon"></i>
-                                                        <Label htmlFor="useremail">Email</Label>
-                                                        <AvField name="useremail"  value={this.state.username} type="email" validate={{email: true, required: true}} className="form-control" id="useremail" placeholder="Enter email"/>
-                                                    </FormGroup>
-
-                                                    <div className="mt-4 text-center">
-                                                        <Button color="primary" className="w-md waves-effect waves-light" type="submit">{this.props.loading ? "Loading..." : "Reset"}</Button>
-                                                    </div>
-                                                </AvForm>
-                                            </div>
-
-                                            <div className="mt-5 text-center">
-                                                <p>Don't have an account ? <Link to="/login" className="font-weight-medium text-primary"> Log in </Link> </p>
-                                                <p>© 2020 Nazox. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
-                                            </div>
-                                        </div>
-
-                                    </Col>
-                                </Row>
+          <Container fluid className="p-0">
+            <Row className="no-gutters">
+              <Col lg={4}>
+                <div className="authentication-page-content p-4 d-flex align-items-center min-vh-100">
+                  <div className="w-100">
+                    <Row className="justify-content-center">
+                      <Col lg={9}>
+                        <div>
+                          <div className="text-center">
+                            <div>
+                              <Link to="/" className="logo">
+                                <img src={logodark} height="20" alt="logo" />
+                              </Link>
                             </div>
+
+                            <h4 className="font-size-18 mt-4">
+                              Reset Password
+                            </h4>
+                            <p className="text-muted">
+                              Reset your password to Nazox.
+                            </p>
+                          </div>
+
+                          <div className="p-2 mt-5">
+                            {this.props.forgetError &&
+                            this.props.forgetError ? (
+                              <Alert color="danger" className="mb-4">
+                                {this.props.forgetError}
+                              </Alert>
+                            ) : null}
+                            {this.props.message ? (
+                              <Alert color="success" className="mb-4">
+                                {this.props.message}
+                              </Alert>
+                            ) : null}
+                            <AvForm
+                              className="form-horizontal"
+                              onValidSubmit={this.handleValidSubmit}
+                            >
+                              <FormGroup className="auth-form-group-custom mb-4">
+                                <i className="ri-mail-line auti-custom-input-icon"></i>
+                                <Label htmlFor="useremail">Email</Label>
+                                <AvField
+                                  name="useremail"
+                                  value={this.state.username}
+                                  type="email"
+                                  validate={{ email: true, required: true }}
+                                  className="form-control"
+                                  id="useremail"
+                                  placeholder="Enter email"
+                                />
+                              </FormGroup>
+
+                              <div className="mt-4 text-center">
+                                <Button
+                                  color="primary"
+                                  className="w-md waves-effect waves-light"
+                                  type="submit"
+                                >
+                                  {this.props.loading ? "Loading..." : "Reset"}
+                                </Button>
+                              </div>
+                            </AvForm>
+                          </div>
+
+                          <div className="mt-5 text-center">
+                            <p>
+                              Don't have an account ?{" "}
+                              <Link
+                                to="/login"
+                                className="font-weight-medium text-primary"
+                              >
+                                {" "}
+                                Log in{" "}
+                              </Link>{" "}
+                            </p>
+                            <p>
+                              © 2021 Platinum Dashboard. Crafted with{" "}
+                              <i className="mdi mdi-heart text-danger"></i> by
+                              James Oyanna
+                            </p>
+                          </div>
                         </div>
-                    </Col>
-                    <Col lg={8}>
-                        <div className="authentication-bg">
-                            <div className="bg-overlay"></div>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+                      </Col>
+                    </Row>
+                  </div>
+                </div>
+              </Col>
+              <Col lg={8}>
+                <div className="authentication-bg">
+                  <div className="bg-overlay"></div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </div>
       </React.Fragment>
     );
