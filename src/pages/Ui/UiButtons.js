@@ -52,7 +52,7 @@ class UiButtons extends Component {
                 <Card>
                   <CardBody>
                     <h4 className="card-title">Default buttons</h4>
-                    <p className="card-title-desc">Bootstrap includes six predefined button styles, each serving its own semantic purpose.</p>
+                    <p className="card-title-desc">Bootstrap includes six predefined buttos own semantic purpose.</p>
                     <div className="button-items">
                       <Button
                         color="primary"
