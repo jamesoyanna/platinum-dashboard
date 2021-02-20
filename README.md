@@ -1,5 +1,6 @@
 # platinum-dashboard
-An ecommerce website dashboard application.
+An ecommerce website dashboard application used for monitoring sales, products and manage an entire ecommerce activities. 
+It is built with React Js and other frontend technologies.
 
 ![dashboard](https://user-images.githubusercontent.com/26815113/108593757-e1b47500-7375-11eb-83d7-86668c90cd94.PNG)
 ![dash2](https://user-images.githubusercontent.com/26815113/108593758-e37e3880-7375-11eb-9695-03606debd7b5.PNG)
