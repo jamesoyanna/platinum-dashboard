@@ -97,7 +97,7 @@ class Login extends Component {
 
                                             <div className="mt-5 text-center">
                                                 <p>Don't have an account ? <Link to="/register" className="font-weight-medium text-primary"> Register </Link> </p>
-                                                <p>© 2020 Platinum Dashboard. Crafted with <i className="mdi mdi-heart text-danger"></i> by James Oyanna</p>
+                                                <p>© 2021 Platinum Dashboard. Crafted with <i className="mdi mdi-heart text-danger"></i> by James Oyanna</p>
                                             </div>
                                         </div>
 

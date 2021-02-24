@@ -2,7 +2,7 @@ import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
 let users = [
-  { id: 1, username: 'admin', password: '123456', email: 'admin@themesdesign.in' }
+  { id: 1, username: 'admin', password: 'admin', email: 'admin@platinum.com' }
 ];
 
 const fakeBackend = () => {
